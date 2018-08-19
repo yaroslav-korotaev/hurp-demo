@@ -1,0 +1,9 @@
+{
+  "nodeArgs": [
+    "--require", "ts-node/register"
+  ],
+  "watch": [
+    "src"
+  ],
+  "ext": "ts"
+}
