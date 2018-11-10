@@ -20,35 +20,35 @@
     "start": "dotenv nodemon src/server.ts | hurp-log-pretty"
   },
   "dependencies": {
-    "enw": "^0.1.0",
-    "hurp": "^3.0.0",
-    "hurp-http-server": "^1.0.1",
-    "hurp-launch": "^1.0.0",
-    "hurp-types": "^1.0.0",
-    "koa": "^2.5.3",
+    "enw": "^0.1.2",
+    "hurp": "^3.0.1",
+    "hurp-http-server": "^1.0.2",
+    "hurp-launch": "^1.0.1",
+    "hurp-types": "^1.0.1",
+    "koa": "^2.6.2",
     "koa-compose": "^4.1.0",
     "koa-mount": "^4.0.0",
     "koa-route": "^3.2.0",
-    "pino": "^5.7.0"
+    "pino": "^5.8.1"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.2",
+    "@types/jest": "^23.3.9",
     "@types/koa": "^2.0.46",
     "@types/koa-compose": "^3.2.2",
     "@types/koa-mount": "^3.0.1",
     "@types/koa-route": "^3.2.4",
-    "@types/node": "^10.9.4",
-    "@types/pino": "^5.6.0",
+    "@types/node": "^10.12.5",
+    "@types/pino": "^5.8.1",
     "dotenv-cli": "^1.4.0",
-    "hurp-log-pretty": "^0.1.0",
+    "hurp-log-pretty": "^0.1.1",
     "jest": "^23.6.0",
-    "jest-extended": "^0.8.1",
-    "nodemon": "^1.18.4",
+    "jest-extended": "^0.11.0",
+    "nodemon": "^1.18.6",
     "npm-run-all": "^4.1.3",
-    "ts-jest": "^23.1.4",
+    "ts-jest": "^23.10.4",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
-    "tslint-config-hurp": "^1.2.0",
-    "typescript": "^3.0.3"
+    "tslint-config-hurp": "^1.2.2",
+    "typescript": "^3.1.6"
   }
 }
