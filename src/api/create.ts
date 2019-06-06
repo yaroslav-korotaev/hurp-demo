@@ -1,7 +1,6 @@
 import Koa from 'koa';
 import compose from 'koa-compose';
 import route from 'koa-route';
-import { Context as KoaContext } from '../web/types';
 import { Context as ApiContext, Method, Options } from './types';
 
 export default function create(
@@ -14,14 +13,13 @@ export default function create(
   
   const log = options.log.child({ tag: 'api' });
   
-  return route.get('/:name', async (ctx: Koa.Context, name: string): Promise<void> => {
-    const koaCtx = ctx as KoaContext;
-    
+  return route.get('/:name', async (koaCtx: Koa.Context, name: string): Promise<void> => {
     const method = map.get(name);
     if (!method)
       return koaCtx.throw(404);
     
     const apiCtx: ApiContext = {
+      // tslint:disable-next-line:no-unsafe-any
       app: koaCtx.bridge,
     };
     // tslint:disable-next-line:no-unbound-method
