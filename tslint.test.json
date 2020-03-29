@@ -1,6 +1,0 @@
-{
-  "extends": "tslint-config-hurp/test",
-  "rules": {
-    "no-inferred-empty-object-type": false
-  }
-}
